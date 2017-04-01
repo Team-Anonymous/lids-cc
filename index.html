@@ -12,7 +12,11 @@
 <body>
   <div class="container">
     <div class="row cc-widget-div">
-      <div class="col-lg-4" style="background-color:yellow;">hello</div>
+      <div class="col-lg-4">
+        <video width="320" height="240" controls>
+          <source src="videos/BangaloreTraffic.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="col-lg-8 cc-notif-div">
   	     <table class="table table-hover table-condensed">
            <thead>
@@ -29,43 +33,122 @@
               <td>signal jump </td>
               <td>axcv </td>
               <td>
-                <span class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Chalan"></span>
-                <span class="glyphicon glyphicon-facetime-video cc-notif-action-span"></span>
+                <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#viewMapModal" data-toggle="modal"></i>
               </td>
             </tr>
             <tr>
               <td>2017-04-01 12:00:08 PM IST</td>
               <td>signal jump </td>
               <td>axcv </td>
-              <td>fine collected </td>
+              <td>
+                <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#viewMapModal" data-toggle="modal"></i>
+              </td>
             </tr>
             <tr>
               <td>2017-04-01 12:00:08 PM IST</td>
               <td>signal jump </td>
               <td>axcv </td>
-              <td>fine collected </td>
+              <td>
+                <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#viewMapModal" data-toggle="modal"></i>
+              </td>
             </tr>
             <tr>
               <td>2017-04-01 </td>
               <td>signal jump </td>
               <td>axcv </td>
-              <td>fine collected </td>
+              <td>
+                <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#viewMapModal" data-toggle="modal"></i>
+              </td>
             </tr>
             <tr>
               <td>2017-04-01 </td>
               <td>signal jump </td>
               <td>axcv </td>
-              <td>fine collected </td>
+              <td>
+                <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#viewMapModal" data-toggle="modal"></i>
+              </td>
             </tr>
             <tr>
               <td>2017-04-01 </td>
               <td>signal jump </td>
               <td>axcv </td>
-              <td>fine collected </td>
+              <td>
+                <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
+                <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#viewMapModal" data-toggle="modal"></i>
+              </td>
             </tr>
           </tbody>
       </div>
     </div>
+
+    <div class="modal fade" tabindex="-1" id="issueChallanModal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>ISSUE CHALLAN MODAL</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="viewVideoModal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">2017-04-01 15:05:45 PM IST</h4>
+          </div>
+          <div class="modal-body">
+            <p>VIEW VIDEO MODAL</p>
+            <video width="320" height="240" controls>
+              <source src="videos/BangaloreTraffic.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="viewMapModal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>VIEW MAP MODAL</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
