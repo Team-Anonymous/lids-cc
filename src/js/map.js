@@ -1,10 +1,14 @@
 var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 2,
-          center: new google.maps.LatLng(2.8,-187.3),
+          zoom: 15,
+          center: new google.maps.LatLng(12.9727185,77.6197074),
           mapTypeId: 'terrain'
         });
+
+
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
 
         // Create a <script> tag and set the USGS URL as the source.
         var script = document.createElement('script');
