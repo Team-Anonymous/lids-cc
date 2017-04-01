@@ -6,11 +6,8 @@ var map;
           mapTypeId: 'terrain'
         });
       alert("hello1");
-       $.getJSON("fetch.php", function(data) {
+       $.getJSON("fetch.php", function(results) {
       alert("hello2");
-         var results=data;
-      alert("hello3");
-        alert("Value for 'a': " + results[0]);
       });
       }
 
@@ -19,7 +16,6 @@ var map;
       // set of coordinates.
       window.eqfeed_callback = function(results) {
                   alert("hello4");
-alert(results);
         for (var i = 0; i < results.features.length; i++) {
           var latLng = new google.maps.LatLng(coords[1],coords[0]);
           var marker = new google.maps.Marker({
