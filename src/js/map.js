@@ -10,6 +10,7 @@ var map;
          var results=data;
         alert("Value for 'a': " + results[0]);
       });
+      }
 
 
       // Loop through the results array and place a marker for each
