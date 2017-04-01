@@ -7,6 +7,7 @@ var map;
         });
       alert("hello1");
        $.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php", function(results) {
+      alert(results);
       alert("hello2");
       });
       }
