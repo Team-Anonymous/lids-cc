@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row cc-widget-div" style="margin:10px;">
       <div class="col-lg-4">
-        <video width="320" height="240" autoplay muted>
+        <video width="320" height="240" autoplay muted loop>
           <source src="videos/BangaloreTraffic.mp4" type="video/mp4">
         </video>
       </div>
@@ -62,7 +62,7 @@
                   <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#mapParent"></i>
                 </td>
               </tr>
-              <tr>
+              <tr class="bg-danger">
                 <td>2017-04-01 12:00:08 PM IST</td>
                 <td>Involved In Accident</td>
                 <td>USER4</td>
@@ -88,9 +88,19 @@
             <h4 class="modal-title">Modal title</h4>
           </div>
           <div class="modal-body">
-            <p>ISSUE CHALLAN MODAL</p>
+            <p>ISSUE CHALLAN</p>
+            <center>
+              <form>
+                License Number:
+                <input type="text" name="licenseNumber" value="GJ05/1234567">
+                <br>
+                Fine Amount:
+                <input type="text" name="fineAmount" value="500">
+              </form>
+            </center>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-success">Submit</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
           </div>
