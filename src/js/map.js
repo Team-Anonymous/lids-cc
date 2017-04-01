@@ -16,6 +16,7 @@ var map;
       // Loop through the results array and place a marker for each
       // set of coordinates.
       window.eqfeed_callback = function(results) {
+            alert(results);
         for (var i = 0; i < results.features.length; i++) {
           var latLng = new google.maps.LatLng(coords[1],coords[0]);
           var marker = new google.maps.Marker({
