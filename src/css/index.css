@@ -1,0 +1,20 @@
+.cc-widget-div
+{
+  border: 2px solid red;
+}
+
+.cc-notif-div
+{
+  border-left: 2px solid #bbb;
+}
+.cc-notif-action-span
+{
+  border-right: 2px solid #bbb;
+  margin-right: 5px;
+  padding-right: 5px;
+  cursor:pointer;
+}
+.cc-notif-action-span:hover
+{
+  color:blue;
+}
