@@ -6,7 +6,7 @@ var map;
           mapTypeId: 'terrain'
         });
       alert("hello1");
-       $.getJSON("fetch.php", function(results) {
+       $.getJSON("http://http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php", function(results) {
       alert("hello2");
       });
       }
