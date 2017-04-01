@@ -1,6 +1,12 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .cc-widget-div
 {
-  border: 2px solid red;
+  border: 2px solid #303030;
 }
 
 .cc-notif-div

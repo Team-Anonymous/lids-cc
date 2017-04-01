@@ -14,6 +14,7 @@ var map;
         document.getElementsByTagName('head')[0].appendChild(script);
       }
 
+
       // Loop through the results array and place a marker for each
       // set of coordinates.
       window.eqfeed_callback = function(results) {
