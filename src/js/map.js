@@ -11,6 +11,7 @@ var map;
         // script.src = 'http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/week';
         script.src = "http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php";
            alert("hello");
+            alert(results);
         document.getElementsByTagName('head')[0].appendChild(script);
       }
      
@@ -25,7 +26,6 @@ var map;
       // Loop through the results array and place a marker for each
       // set of coordinates.
       window.eqfeed_callback = function(results) {
-                  alert("hello4");
         for (var i = 0; i < results.features.length; i++) {
           var latLng = new google.maps.LatLng(coords[1],coords[0]);
           var marker = new google.maps.Marker({
