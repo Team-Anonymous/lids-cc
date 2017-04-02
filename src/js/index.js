@@ -10,5 +10,5 @@ function getCFQuotaMetrics(){
       var licenseID = result[0]["LicenseID"];
       var startDate = result[0]["Startdate"];
   });
-  document.getElementById("cfData").innerHTML=currentCF+"//"+cfQuota+"\n"+"Estimated Date Of Expiry:"+expireDate;
+  document.getElementById("cfData").innerHTML=currentCF+" of "+cfQuota+"<br> Estimated Date Of Expiry: "+expireDate;
 }
