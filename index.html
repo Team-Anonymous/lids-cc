@@ -63,7 +63,7 @@
           </center>
           </div>
           <div class="col-lg-5">
-             <table class="table table-hover table-condensed">
+             <table class="table table-condensed" id="alertNotifsTable">
                  <thead>
                    <tr>
                     <th width="35%">TIME</th>
@@ -72,25 +72,22 @@
                     <th width="25%">ACTIONS</th>
                   </tr>
                 </thead>
-                <tbody class="cc-notif-time">
-                  <tr class="bg-danger first-responder-red" id="firstRespond">
-                    <td>2017-04-01 12:01:10 PM IST</td>
+                <tbody class="cc-notif-time" id="alertNotifsTableBody">
+                  <tr class="bg-danger first-responder-red" id="firstRespond" style="color:white;">
+                    <td style="font-size:10px">Sun Apr 01 12:01:10 GMT+0530 (India Standard Time)</td>
                     <td>Ambulance Approaching</td>
-                    <td>USER1</td>
+                    <td>AP10CE2578</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" onclick="showUserRoute(1);"></i>
                       <i class="glyphicon glyphicon-info-sign cc-notif-action-span" title="View Vehicle Info" data-target="#vehicleDetailModal" data-toggle="modal"></i>
-                      <i class="glyphicon glyphicon-road cc-notif-action-span" title="First Responder Lane Clear" onclick="getTrafficSignal();"></i>
-                      <i class="glyphicon glyphicon-ok-circle cc-notif-action-span" title="Go Signal"></i>
-                      <i class="glyphicon glyphicon-remove-circle cc-notif-action-span" title="Stop Signal"></i>
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:01:05 PM IST</td>
+                    <td style="font-size:10px">Sun Apr 01 12:01:05 GMT+0530(India Standard Time)</td>
                     <td>No Helmet</td>
-                    <td>USER2</td>
+                    <td>AP10CE7459</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
@@ -99,9 +96,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:00:48 PM IST</td>
+                    <td style="font-size:10px">Sun Apr 01 12:00:45 GMT+0530(India Standard Time)</td>
                     <td>Rash Driving</td>
-                    <td>USER3</td>
+                    <td>AP10CE2798</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
@@ -110,9 +107,9 @@
                     </td>
                   </tr>
                   <tr class="bg-danger">
-                    <td>2017-04-01 12:00:40 PM IST</td>
+                    <td style="font-size:10px">Sun Apr 01 12:00:40 GMT+0530(India Standard Time)</td>
                     <td>Involved In Accident</td>
-                    <td>USER4</td>
+                    <td>AP10CE4786</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
@@ -121,9 +118,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:00:28 PM IST</td>
+                    <td style="font-size:10px">Sun Apr 01 12:00:30 GMT+0530(India Standard Time)</td>
                     <td>Signal Jump</td>
-                    <td>USER1</td>
+                    <td>AP10CE7852</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
@@ -132,9 +129,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:00:08 PM IST</td>
+                    <td style="font-size:10px">Sun Apr 01 12:00:20 GMT+0530(India Standard Time)</td>
                     <td>No Helmet</td>
-                    <td>USER2</td>
+                    <td>AP10CE1234</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
