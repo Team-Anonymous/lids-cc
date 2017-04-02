@@ -37,7 +37,7 @@ function initialize() {
 
   map = new google.maps.Map(document.getElementById('map-canvas'),
           mapOptions);
-$.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php", function(result){
+$.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php?tripid=1", function(result){
 	alert(result);
         $.each(result, function(i, field){
             alert(field);
