@@ -73,20 +73,21 @@
                   </tr>
                 </thead>
                 <tbody class="cc-notif-time">
-                  <tr>
-                    <td>2017-04-01 12:00:08 PM IST</td>
-                    <td>Signal Jump</td>
+                  <tr class="bg-danger first-responder-red" id="firstRespond">
+                    <td>2017-04-01 12:01:10 PM IST</td>
+                    <td>Ambulance Approaching</td>
                     <td>USER1</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" onclick="showUserRoute(1);"></i>
                       <i class="glyphicon glyphicon-info-sign cc-notif-action-span" title="View Vehicle Info" data-target="#vehicleDetailModal" data-toggle="modal"></i>
+                      <i class="glyphicon glyphicon-road cc-notif-action-span" title="First Responder Lane Clear" onclick="changeToGreen(firstRespond);"></i>
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:00:08 PM IST</td>
-                    <td>Helmet Not Worn</td>
+                    <td>2017-04-01 12:01:05 PM IST</td>
+                    <td>No Helmet</td>
                     <td>USER2</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
@@ -96,7 +97,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:00:08 PM IST</td>
+                    <td>2017-04-01 12:00:48 PM IST</td>
                     <td>Rash Driving</td>
                     <td>USER3</td>
                     <td>
@@ -107,7 +108,7 @@
                     </td>
                   </tr>
                   <tr class="bg-danger">
-                    <td>2017-04-01 12:00:08 PM IST</td>
+                    <td>2017-04-01 12:00:40 PM IST</td>
                     <td>Involved In Accident</td>
                     <td>USER4</td>
                     <td>
@@ -118,7 +119,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2017-04-01 12:00:08 PM IST</td>
+                    <td>2017-04-01 12:00:28 PM IST</td>
                     <td>Signal Jump</td>
                     <td>USER1</td>
                     <td>
@@ -130,30 +131,8 @@
                   </tr>
                   <tr>
                     <td>2017-04-01 12:00:08 PM IST</td>
-                    <td>Helmet Not Worn</td>
+                    <td>No Helmet</td>
                     <td>USER2</td>
-                    <td>
-                      <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
-                      <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
-                      <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#mapParent"></i>
-                      <i class="glyphicon glyphicon-info-sign cc-notif-action-span" title="View Vehicle Info" data-target="#vehicleDetailModal" data-toggle="modal"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2017-04-01 12:00:08 PM IST</td>
-                    <td>Rash Driving</td>
-                    <td>USER3</td>
-                    <td>
-                      <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
-                      <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
-                      <i class="glyphicon glyphicon-map-marker cc-notif-action-span" title="View Route" data-target="#mapParent"></i>
-                      <i class="glyphicon glyphicon-info-sign cc-notif-action-span" title="View Vehicle Info" data-target="#vehicleDetailModal" data-toggle="modal"></i>
-                    </td>
-                  </tr>
-                  <tr class="bg-danger">
-                    <td>2017-04-01 12:00:08 PM IST</td>
-                    <td>Involved In Accident</td>
-                    <td>USER4</td>
                     <td>
                       <i class="glyphicon glyphicon-file cc-notif-action-span" title="Issue Challan" data-target="#issueChallanModal" data-toggle="modal"></i>
                       <i class="glyphicon glyphicon-facetime-video cc-notif-action-span" title="View Video" data-target="#viewVideoModal" data-toggle="modal"></i>
@@ -271,7 +250,7 @@
               <div class="col-lg-12">EMMISION PROFILE:&nbsp;&nbsp;&nbsp;<input type="text" id="emmisionProfile" placeholder="BS-3" disabled><hr></div>
             </div>
             <div class="row">
-              <div class="col-lg-12"><h3>TRIPS HISTORY:</h3><br>
+              <div class="col-lg-12"><h4>TRIPS HISTORY:</h4><br>
                 <table class="table table-condensed">
                   <thead>
                     <tr>

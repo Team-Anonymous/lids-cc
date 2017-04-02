@@ -13,3 +13,8 @@ function getCFQuotaMetrics(){
   });
 
 }
+
+function changeToGreen($rowid){
+  $("rowid").removeClass("first-responder-red");
+  $("rowid").addClass("first-responder-green");
+}

@@ -95,3 +95,13 @@ html, body {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
+
+.first-responder-red
+{
+  background-color: #FF0000;
+}
+
+.first-responder-green
+{
+  background-color: #00FF00;
+}
