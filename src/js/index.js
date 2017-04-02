@@ -15,6 +15,22 @@ function getCFQuotaMetrics(){
 }
 
 function changeToGreen($rowid){
-  $("rowid").removeClass("first-responder-red");
+  $("rowid").removeClass("first-responder-red").addClass("first-responder-green");
   $("rowid").addClass("first-responder-green");
+}
+
+function getTrafficSignal(){
+  $.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetchTrafficControl.php?signalid=1", function(result){
+    var signalStatus = result[0]["SignalStatus"];
+    var signalLocation = result[0]["SignalLocation"];
+    var signalId = result[0]["SignalID"];
+    if(signalStatus==1){
+
+    }
+  }
+}
+
+function getAlertsAndNotificationsByPriority(){
+  // Step 1: Invoke getNOtfications api
+  // Step 2: Parse the object 
 }
