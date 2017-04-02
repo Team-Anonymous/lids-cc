@@ -40,7 +40,7 @@ function initialize() {
 $.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php?tripid=1", function(result){
 	alert(result);
         $.each(result, function(i, field){
-            alert(field);
+            alert(JSON.stringify(field));
         });
     });
 drop();
