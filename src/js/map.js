@@ -26,7 +26,7 @@ function initialize() {
 
 function showUserRoute(tripID){
 	var routeNeighborhoods = [];
-	$.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetchTripInfo.php?tripid=1", function(result){
+	$.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetchTripInfo.php?tripid=5", function(result){
 	    $.each(result, function(i, field){
 					var loc=[];
 					loc.push(field['latitude7E']);
