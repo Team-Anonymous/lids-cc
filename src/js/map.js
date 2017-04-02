@@ -34,8 +34,11 @@ function initialize() {
 $.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php?tripid=1", function(result){
 	alert(result);
         $.each(result, function(i, field){
-		alert([field['latitude7E'],field['longitude7E']]);
-            neighborhoods.push([field['latitude7E'],field['longitude7E']]);
+		var loc=[];
+		loc.push(field['latitude7E']);
+		loc.push(field['longitude7E']);
+		alert(loc);
+            neighborhoods.push(loc);
         });
     });
 drop();
