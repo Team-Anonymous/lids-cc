@@ -1,18 +1,3 @@
-// If you're adding a number of markers, you may want to
-// drop them on the map consecutively rather than all at once.
-// This example shows how to use setTimeout() to space
-// your markers' animation.
-
-/*var berlin = new google.maps.LatLng(52.520816, 13.410186);
-
-var neighborhoods = [
-  new google.maps.LatLng(12.924769, 77.686828),
-  new google.maps.LatLng(40.793435, -73.414763),
-  new google.maps.LatLng(48.235647, 9.001422),
-  new google.maps.LatLng(52.517683, 13.394393)
-];*/
-
-//var berlin = new google.maps.LatLng(12.924769, 77.686828);
 var india = new google.maps.LatLng(7.873054, 80.771797);
 
 var neighborhoods = [];
