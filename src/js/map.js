@@ -15,13 +15,7 @@ var neighborhoods = [
 //var berlin = new google.maps.LatLng(12.924769, 77.686828);
 var india = new google.maps.LatLng(7.873054, 80.771797);
 
-var neighborhoods = [
-	[16.4396619, 80.6197623],
-  	[16.4496619, 80.6597623],
-  	[16.2496619, 81.001422],
-  	[16.6496619, 81.863136],
-  	[16.8496619, 81.922805]  
-];
+var neighborhoods = [];
 
 
 var markers = [];
@@ -40,7 +34,8 @@ function initialize() {
 $.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetch.php?tripid=1", function(result){
 	alert(result);
         $.each(result, function(i, field){
-            alert(JSON.stringify(field));
+		alert([field['latitude7E'],field['longitude7E']]);
+            neighborhoods.push([field['latitude7E'],field['longitude7E']]);
         });
     });
 drop();
