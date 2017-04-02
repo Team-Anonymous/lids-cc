@@ -4,6 +4,11 @@ $(document).ready(function(){
 
 function getCFQuotaMetrics(){
   $.getJSON("http://lidsmysqldb.cloudapp.net/sih2017/lids-api/fetchCF.php?licenseid=1", function(result){
-      alert(result);
+      var currentCF = result[0]["CurrentCF"];
+      var cfQuota = result[0]["CFQuota"];
+      var expireDate = result[0]["EstimatedExpiry"];
+      var licenseID = result[0]["LicenseID"];
+      var startDate = result[0]["Startdate"];
   });
+  document.getElementById("cfData").innerHTML=currentCF+"//"+cfQuota+"\n"+"Estimated Date Of Expiry:"+expireDate;
 }
