@@ -13,39 +13,44 @@ var neighborhoods = [
 ];*/
 
 //var berlin = new google.maps.LatLng(12.924769, 77.686828);
-var india = new google.maps.LatLng(7.873054, 80.771797);
+var mgroad = new google.maps.LatLng(12.9727185,77.6197074);
 
 var neighborhoods = [
-	[16.4396619, 80.6197623],
-  	[16.4496619, 80.6597623],
-  	[16.2496619, 81.001422],
-  	[16.6496619, 81.863136],
-  	[16.8496619, 81.922805]  
+	[12.972592, 77.618416],
+  	[12.972906, 77.617638],
+  	[12.973084, 77.616206],
+  	[12.973350,77.615096],
+  	[12.973580,77.614157]
 ];
 
 
 var markers = [];
 var iterator = 0;
-
 var map;
 
 function initialize() {
   var mapOptions = {
-    zoom: 5,
-    center: india
+    zoom: 15,
+    center: mgroad,
+    mapTypeId:'terrain'
   };
 
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
-$.getJSON("http://lidsmysqldb.cloudapp.net/lids-api/fetch.php", function(result){
-        $.each(result, function(i, field){
-            alert(field);
-        });
-    });
-drop();
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var trafficLayer = new google.maps.TrafficLayer();
+  trafficLayer.setMap(map);
 }
 
-function drop() {
+function showUserRoute(){
+  $.getJSON("http://lidsmysqldb.cloudapp.net/lids-api/fetch.php", function(result){
+                $.each(result, function(i, field){
+                    alert(field);
+                });
+            });
+  dropMarkers();
+}
+
+
+function dropMarkers() {
   for (var i = 0; i < neighborhoods.length; i++) {
     setTimeout(function() {
       addMarker();
@@ -55,7 +60,7 @@ function drop() {
 
 function addMarker() {
   lati=neighborhoods[iterator][0];
-  longi=neighborhoods[iterator][1];	
+  longi=neighborhoods[iterator][1];
   markers.push(new google.maps.Marker({
     position: new google.maps.LatLng(lati,longi),
     map: map,
